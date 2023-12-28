@@ -170,9 +170,11 @@ Now adjust the nginx configuration file as below:
 
 Add this **server_names_hash_bucket_size 128;** under http. 
 
+Nginx conf file path : /etc/nginx/nginx.conf
+
 
 ```bash
-cat /etc/nginx/nginx.conf
+
 # For more information on configuration, see:
 #   * Official English Documentation: http://nginx.org/en/docs/
 #   * Official Russian Documentation: http://nginx.org/ru/docs/
