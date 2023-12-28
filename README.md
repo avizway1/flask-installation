@@ -97,7 +97,7 @@ gunicorn -w 2 -b 0.0.0.0:5000 app:app
 
 Above process will run flask application, but when you press Ctrl+C this stop working.
 
-To run Gunicorn in the background more persistently, you can use the nohup command.
+***To run Gunicorn in the background more persistently, you can use the nohup command.***
 
 ```bash
 nohup gunicorn -w 2 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
