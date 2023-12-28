@@ -95,7 +95,7 @@ touch /home/ec2-user/myflask-proj/templates/500.html
 provide read permissions to the flask app content
 
 ```bash
-sudo chmod -R +r /home/ec2-user/myflask-app
+sudo chmod -R +r /home/ec2-user/myflask-proj
 ```
 
 
