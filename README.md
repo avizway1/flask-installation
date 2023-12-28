@@ -89,7 +89,7 @@ inside the templates folder create index.html file and add below content.
 also, create a file with name 500.html in templates path
 
 ```bash
-touch /home/flaskapp/templates/500.html
+touch /home/ec2-user/myflask-proj/templates/500.html
 ```
 
 provide read permissions to the flask app content
