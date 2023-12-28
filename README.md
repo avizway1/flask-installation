@@ -104,7 +104,7 @@ sudo chmod -R +r /home/ec2-user/myflask-proj
 This command runs Gunicorn with 2 worker processes, binding to all available network interfaces on port 5000. Adjust the number of workers based on your server's resources. Make sure your ec2 instance is opened with port 5000.
 
 ```bash
-gunicorn -w 2 -b 0.0.0.0:5000 app:app
+gunicorn -w 1 -b 0.0.0.0:5000 app:app
 ```
 
 Above process will run flask application, but when you press Ctrl+C this stop working.
