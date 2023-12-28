@@ -109,17 +109,6 @@ gunicorn -w 2 -b 0.0.0.0:5000 app:app
 
 Above process will run flask application, but when you press Ctrl+C this stop working.
 
-***To run Gunicorn in the background more persistently, you can use the nohup command.***
-
-```bash
-nohup gunicorn -w 2 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
-```
-
-If you need to stop the Gunicorn process, you can use the pkill command:
-
-```bash
-pkill gunicorn
-```
 
 **Step 4 : Set Up Nginx as a Reverse Proxy (Optional step but recommended to use)**
 
@@ -273,6 +262,24 @@ Now, restart the nginx server. verify the log file for error.
 
 ```bash
 sudo systemctl restart nginx
+```
+
+if you are getting forbidden error, provide read permissions to the flask app content again.
+
+```bash
+sudo chmod -R +r /home/ec2-user/myflask-proj
+```
+
+***To run Gunicorn in the background more persistently, you can use the nohup command.***
+
+```bash
+nohup gunicorn -w 2 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+```
+
+If you want to stop the Gunicorn process, you can use the pkill command:
+
+```bash
+pkill gunicorn
 ```
 
 nginx log file verification.
