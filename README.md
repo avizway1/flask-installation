@@ -18,13 +18,22 @@ sudo pip3 install virtualenv
 
 **Navigate to the project path and Activate the virtual environment**
 
+My present working directory is /home/ec2-user and am creating my project directory in this location. 
+
+```bash
+mkdir myflask-proj
+```
+
 ```bash
 cd /home/ec2-user/myflask-proj
+```
 
+```bash
 python3 -m venv venv
+```
 
+```bash
 source venv/bin/activate
-
 ```
 
 **Step 2 : Install Flask and Dependencies**
