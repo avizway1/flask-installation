@@ -28,9 +28,12 @@ mkdir myflask-proj
 cd /home/ec2-user/myflask-proj
 ```
 
+When you run below command, it will create a directory named venv (or whatever name you specified) in the current working directory. Inside this directory, it will set up a complete Python environment, including a copy of the Python interpreter, the standard library, and various supporting files
+
 ```bash
 python3 -m venv venv
 ```
+After creating the virtual environment, you need to activate it. Activation is a process that modifies your shell's environment to use the Python interpreter and other tools from the virtual environment. You can observer (venv) in terminal.
 
 ```bash
 source venv/bin/activate
