@@ -273,7 +273,7 @@ sudo chmod -R +r /home/ec2-user/myflask-proj
 ***To run Gunicorn in the background more persistently, you can use the nohup command.***
 
 ```bash
-nohup gunicorn -w 2 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
+nohup gunicorn -w 1 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
 ```
 
 If you want to stop the Gunicorn process, you can use the pkill command:
@@ -293,3 +293,7 @@ To verify gunicon logs
 ```bash
 tail -f gunicorn.log
 ```
+
+=====================
+
+if you want to try with some other code, you can replace the app.py and copy remaining data to "templates" folder.
